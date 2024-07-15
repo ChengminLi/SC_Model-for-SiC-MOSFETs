@@ -17,9 +17,6 @@ t_step = 1e-10;
 Tsw = 50e-6; %switching period of converter
 TW = 3e-6; % Clamping time
 
-%This funciton calculate the waveform, energy loss and Vpk during the SC event
-% function [Esc, Vpk] = LossCal(TW, Vclamp)
-
 vgs_on = VEE:1e-2:(VCC-1e-3);
 NUM_ON = length(vgs_on);
 dids_dt_on = zeros(1,NUM_ON);
